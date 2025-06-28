@@ -3,86 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Midnight Ops – Network Automation Toolkit</title>
+  <title>Midnight Ops | Network Automation</title>
   <style>
+    :root {
+      --background: #0d1117;
+      --card: #161b22;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --muted: #8b949e;
+      --button: #238636;
+      --button-hover: #2ea043;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0d1117;
-      color: #c9d1d9;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
       line-height: 1.6;
+      padding: 0;
     }
-
     header {
-      background: linear-gradient(to right, #1f1f1f, #161b22);
-      padding: 4rem 2rem;
       text-align: center;
+      padding: 4rem 2rem 2rem;
     }
-
-    header h1 {
-      color: #58a6ff;
-      font-size: 3.5rem;
+    h1 {
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
+      color: var(--accent);
     }
-
-    header p {
-      font-size: 1.25rem;
+    p.lead {
+      font-size: 1.2rem;
       max-width: 720px;
       margin: 0 auto;
-      color: #adbac7;
+      color: var(--muted);
     }
-
+    section {
+      max-width: 880px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    h2 {
+      color: var(--accent);
+      margin-top: 1rem;
+      font-size: 1.4rem;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    .card {
+      background-color: var(--card);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
     a.button {
       display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 1.6rem;
-      background: #238636;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--button);
       color: white;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
       transition: background 0.3s;
     }
-
     a.button:hover {
-      background: #2ea043;
+      background: var(--button-hover);
     }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      color: #58a6ff;
-      margin-bottom: 1rem;
-      font-size: 2rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin-bottom: 0.6rem;
-    }
-
-    .highlight {
-      background: #21262d;
-      padding: 1.5rem;
-      border-left: 4px solid #58a6ff;
-      border-radius: 6px;
-      margin-top: 2rem;
-    }
-
     footer {
       text-align: center;
       padding: 2rem;
-      font-size: 0.9rem;
-      color: #8b949e;
-      background: #0d1117;
-      border-top: 1px solid #30363d;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #21262d;
+      margin-top: 3rem;
     }
   </style>
 </head>
@@ -90,42 +88,34 @@
 
   <header>
     <h1>Midnight Ops</h1>
-    <p>Precision-crafted network automation tools for engineers who build, secure, and optimize infrastructure while the world sleeps.</p>
-    <a class="button" href="https://github.com/zupm-dot/network-automation" target="_blank">🚀 View the Toolkit on GitHub</a>
+    <p class="lead">Modern, modular, and vendor-aware network automation tooling — built by engineers, for engineers.</p>
+    <a class="button" href="https://github.com/zupm-dot/network-automation" target="_blank">View GitHub Toolkit</a>
   </header>
 
   <section>
-    <h2>🛠️ What We Offer</h2>
-    <p>
-      Midnight Ops provides a growing set of tools and frameworks for automating complex network tasks with confidence.
-      Below are just a few examples:
-    </p>
-    <ul>
-      <li>📦 Ansible roles for pushing config to F5, Cisco, and Linux environments</li>
-      <li>🧪 Python scripts to manage certificates, monitor health, and automate lifecycle tasks</li>
-      <li>🛰️ Bash utilities for quick connectivity testing, curl-based probes, and multi-IP resolution</li>
-      <li>📬 Postman collections for validating REST APIs across Meraki, DNA Center, ACI, and more</li>
-    </ul>
-
-    <div class="highlight">
-      <strong>These are just the beginning.</strong><br/>
-      We can deliver full-stack automation solutions tailored to your environment — from daily operational tasks to enterprise CI/CD for network infrastructure.
-      <br/><br/>
-      <a class="button" href="mailto:midnightops.ny@gmail.com">📨 Contact Us to Discuss Your Use Case</a>
+    <h2>Capabilities</h2>
+    <div class="card">
+      <ul>
+        <li>Infrastructure automation via Ansible roles and dynamic inventories</li>
+        <li>Python-driven cert rotation, API queries, and state validation</li>
+        <li>Postman suites for testing Meraki, ACI, and F5 workflows</li>
+        <li>Bash utilities for DNS probing, pool member testing, and CLI ops</li>
+      </ul>
     </div>
   </section>
 
   <section>
-    <h2>⚙️ Built With</h2>
-    <ul>
-      <li>✔️ Ansible, Python 3, Bash, REST APIs</li>
-      <li>✔️ GitHub Actions, YAML Pipelines</li>
-      <li>✔️ F5 BIG-IP, Cisco Meraki, ACI, ISE, Firepower, DNA Center</li>
-    </ul>
+    <h2>Consulting & Custom Solutions</h2>
+    <div class="card">
+      <p>Midnight Ops is more than a toolkit. It’s a starting point.</p>
+      <p>We help teams automate infrastructure, integrate APIs, and build repeatable playbooks for complex environments — from legacy data centers to hybrid networks.</p>
+      <p>If you don’t see what you need here, reach out. We build what’s missing.</p>
+      <a class="button" href="mailto:midnightops.ny@gmail.com">Contact Us</a>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Midnight Ops &mdash; Automate Everything, Especially at Midnight.
+    &copy; 2025 Midnight Ops &mdash; Focused network automation. After hours, on purpose.
   </footer>
 
 </body>
