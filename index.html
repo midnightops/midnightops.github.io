@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Midnight Ops – Network Automation Toolkit</title>
   <style>
     body {
@@ -10,65 +10,98 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #0d1117;
       color: #c9d1d9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-      min-height: 100vh;
+      line-height: 1.6;
     }
     header {
+      background: #161b22;
+      padding: 4rem 2rem;
       text-align: center;
-      margin-bottom: 2rem;
     }
-    h1 {
+    header h1 {
       color: #58a6ff;
-      font-size: 2.5rem;
-      margin: 0.2em 0;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
-    p {
+    header p {
+      font-size: 1.2rem;
       max-width: 700px;
-      line-height: 1.6;
-      font-size: 1.1rem;
+      margin: 0 auto;
     }
-    a {
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
       color: #58a6ff;
-      text-decoration: none;
+      margin-bottom: 0.5rem;
     }
-    a:hover {
-      text-decoration: underline;
+    ul {
+      padding-left: 1.2rem;
     }
-    .btn {
-      margin-top: 2rem;
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
       background: #238636;
       color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
+      text-decoration: none;
       border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
+      font-weight: bold;
       transition: background 0.3s;
     }
-    .btn:hover {
+    a.button:hover {
       background: #2ea043;
     }
     footer {
-      margin-top: auto;
+      text-align: center;
+      padding: 2rem;
       font-size: 0.9rem;
       color: #8b949e;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Midnight Ops</h1>
-    <p>A modern toolkit for network automation — built with Ansible, Python, Bash, and REST APIs to streamline operations, reduce errors, and scale your infrastructure with confidence.</p>
-    <a href="https://github.com/zupm-dot/network-automation" target="_blank">
-      <button class="btn">Explore the GitHub Repo</button>
-    </a>
+    <p>Modern network automation tooling for engineers who script after dark — because networks don’t sleep and neither should your automation.</p>
+    <a class="button" href="https://github.com/zupm-dot/network-automation" target="_blank">🔧 View on GitHub</a>
   </header>
 
+  <section>
+    <h2>🚀 What Is Midnight Ops?</h2>
+    <p>
+      Midnight Ops is a focused collection of real-world automation tools built for engineers managing multi-vendor environments. This includes:
+    </p>
+    <ul>
+      <li>🔗 <strong>Ansible</strong> playbooks and roles for pushing config and orchestrating changes</li>
+      <li>🐍 <strong>Python scripts</strong> for REST APIs, certificate management, and automation logic</li>
+      <li>🐚 <strong>Bash utilities</strong> for quick CLI-based operations and network testing</li>
+      <li>📫 <strong>Postman collections</strong> for validating API integrations and automating workflows</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧰 Technologies Used</h2>
+    <ul>
+      <li>F5 BIG-IP Automation (certs, pools, monitors, UCS backups)</li>
+      <li>Cisco Meraki, ACI, SD-WAN, ISE, Firepower, and DNA Center APIs</li>
+      <li>Linux & shell scripting for config testing and deployment</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📂 Explore the Code</h2>
+    <p>
+      Everything is open-source and actively maintained. Clone it, fork it, or contribute.
+    </p>
+    <a class="button" href="https://github.com/zupm-dot/network-automation" target="_blank">💻 github.com/zupm-dot/network-automation</a>
+  </section>
+
   <footer>
-    &copy; 2025 Midnight Ops — Automate Everything, Especially at Midnight.
+    &copy; 2025 Midnight Ops — Automate everything, especially after hours.
   </footer>
+
 </body>
 </html>
