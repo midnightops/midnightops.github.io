@@ -23,7 +23,7 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: var(--bg);
       color: var(--fg);
-      line-height: 1.6;
+      line-height: 1.5;
     }
     a {
       color: var(--primary);
@@ -31,29 +31,30 @@
     }
     header {
       text-align: center;
-      padding: 4rem 2rem 2rem;
+      padding: 2rem 1rem 1rem;
       border-bottom: 1px solid var(--border);
     }
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.4rem;
+      margin-bottom: 0.3rem;
       color: var(--primary);
     }
     header p {
       max-width: 720px;
       margin: 0 auto;
-      font-size: 1.2rem;
+      font-size: 1.05rem;
       color: var(--muted);
     }
     .btn {
       display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.6rem 1.2rem;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
       background: var(--secondary);
       color: white;
       border-radius: 4px;
       font-weight: 600;
       transition: background 0.3s;
+      font-size: 0.95rem;
     }
     .btn:hover {
       background: var(--secondary-hover);
@@ -61,21 +62,21 @@
     main {
       max-width: 960px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 1rem;
     }
     section {
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
     }
     h2 {
       color: var(--primary);
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
       border-bottom: 1px solid var(--border);
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.4rem;
     }
     .card {
       background-color: var(--card);
-      padding: 1.5rem;
+      padding: 1rem;
       border-radius: 6px;
       border: 1px solid var(--border);
     }
@@ -83,39 +84,43 @@
       margin: 0;
       padding-left: 1.2rem;
     }
+    .card p {
+      margin: 0.4rem 0;
+    }
     .pricing {
       display: grid;
-      gap: 1.5rem;
+      gap: 1rem;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     .plan {
       background-color: var(--card);
       border: 1px solid var(--border);
       border-radius: 6px;
-      padding: 1.5rem;
+      padding: 1rem;
     }
     .plan h3 {
       margin: 0;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: var(--primary);
     }
     .plan p {
       color: var(--muted);
-      font-size: 0.95rem;
-      margin: 0.5rem 0 1rem;
+      font-size: 0.9rem;
+      margin: 0.3rem 0 0.8rem;
     }
     .price {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: bold;
-      margin: 0.5rem 0;
+      margin: 0.3rem 0;
       color: var(--fg);
     }
     footer {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.85rem;
+      padding: 1.2rem;
+      font-size: 0.8rem;
       color: var(--muted);
       border-top: 1px solid var(--border);
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -132,10 +137,10 @@
       <h2>What We Deliver</h2>
       <div class="card">
         <ul>
-          <li>✅ Certified automation for F5, Cisco, Linux & hybrid networks</li>
-          <li>✅ Custom Ansible roles, REST API scripts, and lifecycle hooks</li>
-          <li>✅ Python tooling for cert management, backups, health checks</li>
-          <li>✅ Postman collections for API validation and testing pipelines</li>
+          <li>✅ Automation for F5, Cisco, Linux & hybrid networks</li>
+          <li>✅ Ansible roles, REST API scripts, and lifecycle hooks</li>
+          <li>✅ Python tooling for certs, backups, and validation</li>
+          <li>✅ Postman suites for API verification and CI use</li>
         </ul>
       </div>
     </section>
@@ -143,43 +148,39 @@
     <section>
       <h2>Sample Automation Repo</h2>
       <div class="card">
-        <p>We publish real-world automation examples to demonstrate our approach, code quality, and modular structure. Review, fork, and adapt to your environment.</p>
-        <p><strong>Repo:</strong> <a href="https://github.com/zupm-dot/network-automation" target="_blank">github.com/zupm-dot/network-automation</a></p>
+        <p>We publish real-world examples showing how we build, document, and scale our tools. Browse and adapt them freely:</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/zupm-dot/network-automation" target="_blank">github.com/zupm-dot/network-automation</a></p>
       </div>
     </section>
 
     <section>
-      <h2>Engagement Options</h2>
-      <p style="margin-top: -0.5rem;">We offer fixed-scope automation services at transparent rates:</p>
+      <h2>Pricing</h2>
+      <p style="margin-top: -0.5rem;">Clear pricing for scoped automation work:</p>
       <div class="pricing">
         <div class="plan">
           <h3>Starter</h3>
-          <p>Small script or utility for a specific task</p>
+          <p>Simple script or one-time config</p>
           <div class="price">$250</div>
-          <p>Includes basic documentation</p>
         </div>
         <div class="plan">
           <h3>Standard</h3>
-          <p>Multi-step automation or REST integration</p>
+          <p>Multi-step playbook or API tool</p>
           <div class="price">$750</div>
-          <p>Includes reusable playbook or API suite</p>
         </div>
         <div class="plan">
           <h3>Pro</h3>
-          <p>Full-scope project tailored to your stack</p>
-          <div class="price">Custom</div>
-          <p>Includes GitHub integration & support</p>
+          <p>Custom end-to-end solution</p>
+          <div class="price">Contact</div>
         </div>
       </div>
-      <p style="text-align:center; margin-top: 2rem;">Need a quote? <a href="mailto:midnightops.ny@gmail.com">Contact us directly</a>.</p>
     </section>
 
     <section>
       <h2>Need Something Specific?</h2>
       <div class="card">
         <p>We build tools that don’t exist yet — for platforms you actually run.</p>
-        <p>If your automation needs don't fit neatly into these tiers, reach out for a scoped engagement. We work best when solving real problems, not selling generic scripts.</p>
-        <a class="btn" href="mailto:midnightops.ny@gmail.com">Let’s Talk</a>
+        <p>Not sure where to start? Let’s talk through it.</p>
+        <a class="btn" href="mailto:midnightops.ny@gmail.com">Contact Us</a>
       </div>
     </section>
   </main>
