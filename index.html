@@ -3,82 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Network Automation Services – Pricing</title>
+  <title>Midnight Ops | Network Automation</title>
   <style>
-    body { font-family: sans-serif; padding: 40px; background: #f4f4f4; color: #222; }
-    h1 { color: #003366; }
-    h2 { color: #333; margin-top: 40px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
-    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
-    th { background: #ddeeff; }
-    .highlight { background: #e8fbe8; }
-    ul { margin-top: 10px; }
-    footer { margin-top: 60px; font-size: 0.9em; color: #555; }
+    :root {
+      --background: #0d1117;
+      --card: #161b22;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --muted: #8b949e;
+      --button: #238636;
+      --button-hover: #2ea043;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    p.lead {
+      font-size: 1.2rem;
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+    section {
+      max-width: 880px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    h2 {
+      color: var(--accent);
+      margin-top: 1rem;
+      font-size: 1.4rem;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    .card {
+      background-color: var(--card);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    .pricing {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 1.5rem;
+    }
+    .plan {
+      background-color: var(--card);
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .plan h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    .plan p {
+      color: var(--muted);
+      margin: 0.5rem 0 1rem;
+    }
+    .plan .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #adbac7;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--button);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: var(--button-hover);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #21262d;
+      margin-top: 3rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Network Automation Services</h1>
-  <p>Affordable automation for <strong>F5 BIG-IP</strong>, <strong>Cisco platforms</strong> (ACI, Meraki, DNA Center, ISE, etc.), and basic CI/CD.</p>
 
-  <h2>💼 Hourly Rates</h2>
-  <table>
-    <tr><th>Tier</th><th>Rate</th><th>Includes</th></tr>
-    <tr>
-      <td>Standard</td>
-      <td>$65/hr</td>
-      <td>Scripting, light automation, config cleanup</td>
-    </tr>
-    <tr>
-      <td>Advanced</td>
-      <td>$85/hr</td>
-      <td>CI/CD, Postman collections, Ansible playbooks</td>
-    </tr>
-  </table>
+  <header>
+    <h1>Midnight Ops</h1>
+    <p class="lead">Modern, modular, and vendor-aware network automation tooling — built by engineers, for engineers.</p>
+    <a class="button" href="https://github.com/zupm-dot/network-automation" target="_blank">View GitHub Toolkit</a>
+  </header>
 
-  <h2>📦 Fixed Packages</h2>
-  <table>
-    <tr><th>Package</th><th>Scope</th><th>Price</th></tr>
-    <tr>
-      <td>Quick Start</td>
-      <td>One F5 or Cisco automation workflow<br><small>(e.g. VIP deploy, tenant fetch, or UCS inventory)</small></td>
-      <td>$750</td>
-    </tr>
-    <tr class="highlight">
-      <td>Starter Repo</td>
-      <td>Ansible + Python + Postman base setup with examples</td>
-      <td>$1,500</td>
-    </tr>
-    <tr>
-      <td>Custom Script Set</td>
-      <td>3+ automation tasks or integrations, reusable and documented</td>
-      <td>$2,000–$3,000</td>
-    </tr>
-  </table>
+  <section>
+    <h2>Capabilities</h2>
+    <div class="card">
+      <ul>
+        <li>Infrastructure automation via Ansible roles and dynamic inventories</li>
+        <li>Python-driven cert rotation, API queries, and state validation</li>
+        <li>Postman suites for testing Meraki, ACI, and F5 workflows</li>
+        <li>Bash utilities for DNS probing, pool member testing, and CLI ops</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>🔁 Support Plans</h2>
-  <table>
-    <tr><th>Plan</th><th>Monthly Fee</th><th>Includes</th></tr>
-    <tr>
-      <td>Basic</td>
-      <td>$500</td>
-      <td>Up to 5 support hours + bug fixes</td>
-    </tr>
-    <tr>
-      <td>Pro</td>
-      <td>$1,000</td>
-      <td>10 hours, script updates, new task setup</td>
-    </tr>
-  </table>
+  <section>
+    <h2>Consulting & Custom Solutions</h2>
+    <div class="card">
+      <p>Midnight Ops is more than a toolkit. It’s a starting point.</p>
+      <p>We help teams automate infrastructure, integrate APIs, and build repeatable playbooks for complex environments — from legacy data centers to hybrid networks.</p>
+      <p>If you don’t see what you need here, reach out. We build what’s missing.</p>
+      <a class="button" href="mailto:midnightops.ny@gmail.com">Contact Us</a>
+    </div>
+  </section>
 
-  <h2>✍️ Optional Add-ons</h2>
-  <ul>
-    <li><strong>PDF Documentation:</strong> +$150</li>
-    <li><strong>Training Video:</strong> +$250</li>
-    <li><strong>Live Zoom Training (1 hr):</strong> +$150</li>
-  </ul>
+  <section>
+    <h2>Pricing</h2>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Starter</h3>
+        <p>For small projects or targeted scripts</p>
+        <div class="price">$250</div>
+        <p>Single-use script, role, or tool</p>
+      </div>
+      <div class="plan">
+        <h3>Standard</h3>
+        <p>Reusable automation with docs</p>
+        <div class="price">$750</div>
+        <p>Multi-step playbook, Postman suite, or script bundle</p>
+      </div>
+      <div class="plan">
+        <h3>Pro</h3>
+        <p>Custom engagement for complex needs</p>
+        <div class="price>Contact</div>
+        <p>Scoped project with support & GitHub integration</p>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top: 2rem;">Need something specific or larger scale? <a href="mailto:midnightops.ny@gmail.com">Let's talk.</a></p>
+  </section>
 
   <footer>
-    <p>Interested? <a href="mailto:midnightops.ny@gmail.com">Contact us for a free estimate</a></p>
+    &copy; 2025 Midnight Ops &mdash; Focused network automation. After hours, on purpose.
   </footer>
+
 </body>
 </html>
