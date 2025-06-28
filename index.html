@@ -17,13 +17,15 @@
     }
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: var(--bg);
       color: var(--fg);
-      line-height: 1.5;
+      line-height: 1.45;
+      font-size: 15px;
     }
     a {
       color: var(--primary);
@@ -31,96 +33,95 @@
     }
     header {
       text-align: center;
-      padding: 2rem 1rem 1rem;
+      padding: 1.2rem 1rem 0.8rem;
       border-bottom: 1px solid var(--border);
     }
     header h1 {
-      font-size: 2.4rem;
+      font-size: 2rem;
       margin-bottom: 0.3rem;
       color: var(--primary);
     }
     header p {
-      max-width: 720px;
+      max-width: 700px;
       margin: 0 auto;
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       color: var(--muted);
     }
     .btn {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
+      margin-top: 0.6rem;
+      padding: 0.4rem 0.9rem;
       background: var(--secondary);
       color: white;
       border-radius: 4px;
       font-weight: 600;
-      transition: background 0.3s;
-      font-size: 0.95rem;
+      transition: background 0.2s;
+      font-size: 0.85rem;
     }
     .btn:hover {
       background: var(--secondary-hover);
     }
     main {
-      max-width: 960px;
+      max-width: 880px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 1rem 1rem 0.5rem;
     }
     section {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
     }
     h2 {
       color: var(--primary);
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
       border-bottom: 1px solid var(--border);
-      padding-bottom: 0.4rem;
+      padding-bottom: 0.3rem;
     }
     .card {
       background-color: var(--card);
-      padding: 1rem;
-      border-radius: 6px;
+      padding: 0.8rem;
+      border-radius: 5px;
       border: 1px solid var(--border);
     }
     .card ul {
-      margin: 0;
-      padding-left: 1.2rem;
+      padding-left: 1rem;
+      margin: 0.3rem 0;
     }
     .card p {
       margin: 0.4rem 0;
     }
     .pricing {
       display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 0.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
     .plan {
       background-color: var(--card);
       border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 1rem;
+      border-radius: 5px;
+      padding: 0.9rem;
     }
     .plan h3 {
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 1.05rem;
       color: var(--primary);
     }
     .plan p {
       color: var(--muted);
-      font-size: 0.9rem;
-      margin: 0.3rem 0 0.8rem;
+      font-size: 0.85rem;
+      margin: 0.2rem 0 0.6rem;
     }
     .price {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: bold;
       margin: 0.3rem 0;
       color: var(--fg);
     }
     footer {
       text-align: center;
-      padding: 1.2rem;
-      font-size: 0.8rem;
+      padding: 0.8rem;
+      font-size: 0.75rem;
       color: var(--muted);
       border-top: 1px solid var(--border);
-      margin-top: 2rem;
     }
   </style>
 </head>
@@ -128,8 +129,8 @@
 
   <header>
     <h1>Midnight Ops</h1>
-    <p>Vendor-aware automation services for real-world infrastructure — because networks don’t sleep, and neither does your stack.</p>
-    <a class="btn" href="https://github.com/zupm-dot/network-automation" target="_blank">Explore GitHub Samples</a>
+    <p>Focused automation for modern infrastructure — from CLI to API.</p>
+    <a class="btn" href="https://github.com/zupm-dot/network-automation" target="_blank">View Sample Repo</a>
   </header>
 
   <main>
@@ -137,56 +138,54 @@
       <h2>What We Deliver</h2>
       <div class="card">
         <ul>
-          <li>✅ Automation for F5, Cisco, Linux & hybrid networks</li>
-          <li>✅ Ansible roles, REST API scripts, and lifecycle hooks</li>
-          <li>✅ Python tooling for certs, backups, and validation</li>
-          <li>✅ Postman suites for API verification and CI use</li>
+          <li>✅ Automation for F5, Cisco, Linux, APIs</li>
+          <li>✅ Ansible playbooks, roles, lifecycle flows</li>
+          <li>✅ Python for certs, backups, monitoring</li>
+          <li>✅ Postman for endpoint testing & CI</li>
         </ul>
       </div>
     </section>
 
     <section>
-      <h2>Sample Automation Repo</h2>
+      <h2>Sample Code</h2>
       <div class="card">
-        <p>We publish real-world examples showing how we build, document, and scale our tools. Browse and adapt them freely:</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/zupm-dot/network-automation" target="_blank">github.com/zupm-dot/network-automation</a></p>
+        <p>Explore a curated GitHub repo of real-world network automation:</p>
+        <p><a href="https://github.com/zupm-dot/network-automation" target="_blank">github.com/zupm-dot/network-automation</a></p>
       </div>
     </section>
 
     <section>
       <h2>Pricing</h2>
-      <p style="margin-top: -0.5rem;">Clear pricing for scoped automation work:</p>
       <div class="pricing">
         <div class="plan">
           <h3>Starter</h3>
-          <p>Simple script or one-time config</p>
+          <p>Simple task or script</p>
           <div class="price">$250</div>
         </div>
         <div class="plan">
           <h3>Standard</h3>
-          <p>Multi-step playbook or API tool</p>
+          <p>Multi-step workflow or API</p>
           <div class="price">$750</div>
         </div>
         <div class="plan">
           <h3>Pro</h3>
-          <p>Custom end-to-end solution</p>
+          <p>Custom end-to-end project</p>
           <div class="price">Contact</div>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>Need Something Specific?</h2>
+      <h2>Have a Unique Need?</h2>
       <div class="card">
-        <p>We build tools that don’t exist yet — for platforms you actually run.</p>
-        <p>Not sure where to start? Let’s talk through it.</p>
+        <p>We tailor automation to your stack — fast, clean, production-ready.</p>
         <a class="btn" href="mailto:midnightops.ny@gmail.com">Contact Us</a>
       </div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Midnight Ops — Focused network automation, after hours, on purpose.
+    &copy; 2025 Midnight Ops — Automation with purpose.
   </footer>
 
 </body>
