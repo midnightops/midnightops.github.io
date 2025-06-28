@@ -12,37 +12,30 @@
       color: #c9d1d9;
       line-height: 1.6;
     }
+
     header {
-      background: #161b22;
+      background: linear-gradient(to right, #1f1f1f, #161b22);
       padding: 4rem 2rem;
       text-align: center;
     }
+
     header h1 {
       color: #58a6ff;
-      font-size: 3rem;
+      font-size: 3.5rem;
       margin-bottom: 0.5rem;
     }
+
     header p {
-      font-size: 1.2rem;
-      max-width: 700px;
+      font-size: 1.25rem;
+      max-width: 720px;
       margin: 0 auto;
+      color: #adbac7;
     }
-    section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    h2 {
-      color: #58a6ff;
-      margin-bottom: 0.5rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
+
     a.button {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
+      margin-top: 2rem;
+      padding: 0.8rem 1.6rem;
       background: #238636;
       color: white;
       text-decoration: none;
@@ -50,14 +43,46 @@
       font-weight: bold;
       transition: background 0.3s;
     }
+
     a.button:hover {
       background: #2ea043;
     }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .highlight {
+      background: #21262d;
+      padding: 1.5rem;
+      border-left: 4px solid #58a6ff;
+      border-radius: 6px;
+      margin-top: 2rem;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
       color: #8b949e;
+      background: #0d1117;
+      border-top: 1px solid #30363d;
     }
   </style>
 </head>
@@ -65,42 +90,42 @@
 
   <header>
     <h1>Midnight Ops</h1>
-    <p>Modern network automation tooling for engineers who script after dark — because networks don’t sleep and neither should your automation.</p>
-    <a class="button" href="https://github.com/zupm-dot/network-automation" target="_blank">🔧 View on GitHub</a>
+    <p>Precision-crafted network automation tools for engineers who build, secure, and optimize infrastructure while the world sleeps.</p>
+    <a class="button" href="https://github.com/zupm-dot/network-automation" target="_blank">🚀 View the Toolkit on GitHub</a>
   </header>
 
   <section>
-    <h2>🚀 What Is Midnight Ops?</h2>
+    <h2>🛠️ What We Offer</h2>
     <p>
-      Midnight Ops is a focused collection of real-world automation tools built for engineers managing multi-vendor environments. This includes:
+      Midnight Ops provides a growing set of tools and frameworks for automating complex network tasks with confidence.
+      Below are just a few examples:
     </p>
     <ul>
-      <li>🔗 <strong>Ansible</strong> playbooks and roles for pushing config and orchestrating changes</li>
-      <li>🐍 <strong>Python scripts</strong> for REST APIs, certificate management, and automation logic</li>
-      <li>🐚 <strong>Bash utilities</strong> for quick CLI-based operations and network testing</li>
-      <li>📫 <strong>Postman collections</strong> for validating API integrations and automating workflows</li>
+      <li>📦 Ansible roles for pushing config to F5, Cisco, and Linux environments</li>
+      <li>🧪 Python scripts to manage certificates, monitor health, and automate lifecycle tasks</li>
+      <li>🛰️ Bash utilities for quick connectivity testing, curl-based probes, and multi-IP resolution</li>
+      <li>📬 Postman collections for validating REST APIs across Meraki, DNA Center, ACI, and more</li>
     </ul>
+
+    <div class="highlight">
+      <strong>These are just the beginning.</strong><br/>
+      We can deliver full-stack automation solutions tailored to your environment — from daily operational tasks to enterprise CI/CD for network infrastructure.
+      <br/><br/>
+      <a class="button" href="mailto:your@email.com">📨 Contact Us to Discuss Your Use Case</a>
+    </div>
   </section>
 
   <section>
-    <h2>🧰 Technologies Used</h2>
+    <h2>⚙️ Built With</h2>
     <ul>
-      <li>F5 BIG-IP Automation (certs, pools, monitors, UCS backups)</li>
-      <li>Cisco Meraki, ACI, SD-WAN, ISE, Firepower, and DNA Center APIs</li>
-      <li>Linux & shell scripting for config testing and deployment</li>
+      <li>✔️ Ansible, Python 3, Bash, REST APIs</li>
+      <li>✔️ GitHub Actions, YAML Pipelines</li>
+      <li>✔️ F5 BIG-IP, Cisco Meraki, ACI, ISE, Firepower, DNA Center</li>
     </ul>
-  </section>
-
-  <section>
-    <h2>📂 Explore the Code</h2>
-    <p>
-      Everything is open-source and actively maintained. Clone it, fork it, or contribute.
-    </p>
-    <a class="button" href="https://github.com/zupm-dot/network-automation" target="_blank">💻 github.com/zupm-dot/network-automation</a>
   </section>
 
   <footer>
-    &copy; 2025 Midnight Ops — Automate everything, especially after hours.
+    &copy; 2025 Midnight Ops &mdash; Automate Everything, Especially at Midnight.
   </footer>
 
 </body>
